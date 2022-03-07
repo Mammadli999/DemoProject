@@ -10,6 +10,32 @@ namespace ConsoleApp.DemoProject.Managers
     {
         Group[] data = new Group[0];
 
+        public void GroupEditId(int value)
+        {
+            for (int i = 0; i < data.Length; i++)
+            {
+                if (data[i].Id == value)
+                {
+                    Console.WriteLine("Qrup Adini Secin: ");
+                    string NewName = ScannerManager.ReadString("Yeni Ad Daxil Edin: ");
+                    data[i].Name = data[i].Name.Replace(data[i].Name, NewName);
+                }
+            }
+        }
+
+        public void GroupEditSpeciality(int value)
+        {
+            for (int i = 0; i < data.Length; i++)
+            {
+                if (data[i].Id == value)
+                {
+                    Console.WriteLine("Qrup Ixtisasini Secin: ");
+                    string Speciality = ScannerManager.ReadString("Yeni Ixtisas Daxil Edin: ");
+                    data[i].Speciality = data[i].Speciality.Replace(data[i].Speciality, Speciality);
+                }
+            }
+        }
+
 
         public void Add(Group entity)
         {

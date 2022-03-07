@@ -12,8 +12,9 @@ namespace ConsoleApp.DemoProject.Managers
         public static int ReadInteger(string caption)
         {
         l1:
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            
             Console.Write(caption);
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
 
             if (!int.TryParse(Console.ReadLine(),out int value))
             {

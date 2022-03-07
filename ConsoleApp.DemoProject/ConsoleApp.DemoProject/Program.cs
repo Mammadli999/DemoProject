@@ -33,8 +33,25 @@ namespace ConsoleApp.DemoProject
                     groupMgr.Add(g);
 
                     goto case Menu.GroupAll;
+
                 case Menu.GroupEdit:
-                    break;
+                    Console.Clear();
+                    ShowAllGroups(groupMgr);
+                    Console.WriteLine("Ad Deyismek ucun ==> 1 || Ixtisas Deyismek Ucun ==> 2");
+                    bool success = int.TryParse(Console.ReadLine(), out int menuNumber);
+                    if (success && menuNumber == 1)
+                    {
+                        int value = ScannerManager.ReadInteger("Deyismek Istediyiniz Qrupun ID-ni Daxil Edin: ");
+                        groupMgr.GroupEditId(value);
+                    }
+                    else if (success && menuNumber == 2)
+                    {
+                        int value = ScannerManager.ReadInteger("Deyismek Istediyiniz Qrupun ID-ni Daxil Edin: ");
+                        groupMgr.GroupEditSpeciality(value);
+                    }
+
+                    goto case Menu.GroupAll;
+
                 case Menu.GroupRemove:
                     break;
                 case Menu.GroupSingle:
@@ -56,7 +73,27 @@ namespace ConsoleApp.DemoProject
                     studentMgr.Add(s);
                     goto case Menu.StudentAll;
                 case Menu.StudentEdit:
-                    break;
+
+                    Console.Clear();
+                    ShowAllStudents(studentMgr);
+                    Console.WriteLine("Ad Deyismek ucun ==> 1 || Soyad Deyismek Ucun ==> 2  || Dogum Tarixini Deyismek Ucun ==> 3 || Qrupu Deyismek Ucun ==> 4");
+                    bool success1 = int.TryParse(Console.ReadLine(), out int menuNumber1);
+                    if (success1 && menuNumber1 == 1)
+                    {
+                        int value = ScannerManager.ReadInteger("Deyismek Istediyiniz Telebenin ID-ni Daxil Edin: ");
+                        studentMgr.StudentEditName(value);
+                    }
+                    if (success1 && menuNumber1 == 2)
+                    {
+                        int value = ScannerManager.ReadInteger("Deyismek Istediyiniz Telebenin ID-ni Daxil Edin: ");
+                        studentMgr.StudentEditSurname(value);
+                    }
+                    if (success1 && menuNumber1 == 4)
+                    {
+                        int value = ScannerManager.ReadInteger("Deyismek Istediyiniz Telebenin ID-ni Daxil Edin:");
+                        studentMgr.StudentEditId(value);
+                    }
+                    goto case Menu.StudentAll;
                 case Menu.StudentRemove:
                     break;
                 case Menu.StudentSingle:
@@ -65,6 +102,7 @@ namespace ConsoleApp.DemoProject
                     ShowAllStudents(studentMgr);
                     goto readMenu;
                 case Menu.All:
+                    Console.Clear();
                     ShowAllGroups(groupMgr);
                     ShowAllStudents(studentMgr);
                     goto readMenu;
@@ -94,8 +132,7 @@ namespace ConsoleApp.DemoProject
 
         static void ShowAllGroups(GroupManager groupMgr)
         {
-            Console.Clear();
-            Console.WriteLine("**********Groups**********");
+            Console.WriteLine("**********Groups************");
             foreach (var item in groupMgr.GetAll())
             {
                 Console.WriteLine(item);
@@ -104,7 +141,6 @@ namespace ConsoleApp.DemoProject
 
         static void ShowAllStudents(StudentManager studentMgr)
         {
-            Console.Clear();
             Console.WriteLine("**********Students**********");
             foreach (var item in studentMgr.GetAll())
             {
