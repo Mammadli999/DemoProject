@@ -10,6 +10,25 @@ namespace ConsoleApp.DemoProject.Managers
     {
         Student[] data = new Student[0];
 
+        public void StudentSingle(int value)
+        {
+            string stundetSingle = "";
+
+            for (int i = 0; i < data.Length; i++)
+            {
+                if (data[i].Id == value)
+                {
+                    stundetSingle = $"Telebe Id: {data[i].Id}\n" +
+                        $"Telebenin Adi: {data[i].Name}\n" +
+                        $"Telebenin Soyadi: {data[i].Surname}\n" +
+                        $"Telebenin Dogum Tarixi: {data[i].BirthDate:dd.MM.yyyy}\n";
+                }
+                Console.WriteLine(stundetSingle);
+            }
+        }
+
+
+
         public void StudentEditName(int value)
         {
             for (int i = 0; i < data.Length; i++)
@@ -36,6 +55,20 @@ namespace ConsoleApp.DemoProject.Managers
             }
         }
 
+        public void StudentEditDateTime(int value)
+        {
+            for (int i = 0; i < data.Length; i++)
+            {
+                if (data[i].Id == value)
+                {
+                    Console.WriteLine("Telebenin ID-ni Secin: ");
+                    DateTime NewBirth = ScannerManager.ReadDate("Yeni Dogum Tarixi Daxil Edin: ");
+                    data[i].BirthDate = NewBirth;
+                    break;
+                }
+            }
+        }
+
         public void StudentEditId(int value)
         {
             for (int i = 0; i < data.Length; i++)
@@ -43,9 +76,9 @@ namespace ConsoleApp.DemoProject.Managers
                 if (data[i].Id == value)
                 {
                     Console.WriteLine("Telebenin ID-ni Secin: ");
-                    string NewId = ScannerManager.ReadString("Yeni Id Daxil Edin: ");
-
-                    
+                    int NewId = ScannerManager.ReadInteger("Yeni Id Daxil Edin: ");
+                    data[i].GroupId = NewId;
+                    break;
                 }
             }
         }

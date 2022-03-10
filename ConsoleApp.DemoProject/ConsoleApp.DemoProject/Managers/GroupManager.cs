@@ -10,6 +10,21 @@ namespace ConsoleApp.DemoProject.Managers
     {
         Group[] data = new Group[0];
 
+        public void GroupSingle(int value)
+        {
+            string singleGroup = "";
+            for (int i = 0; i < data.Length; i++)
+            {
+                if (data[i].Id == value)
+                {
+                    singleGroup = $"Qrup ID: {data[i].Id}\n" +
+                        $"Qrupun Adi: {data[i].Name}\n" +
+                        $"Qrupun Ixtisasi: {data[i].Speciality}";
+                }
+            }
+            Console.WriteLine(singleGroup);
+        }
+
         public void GroupEditId(int value)
         {
             for (int i = 0; i < data.Length; i++)

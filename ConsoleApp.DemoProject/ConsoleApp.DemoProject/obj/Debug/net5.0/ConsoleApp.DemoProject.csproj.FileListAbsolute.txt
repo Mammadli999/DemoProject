@@ -30,3 +30,19 @@ C:\Users\mamma\OneDrive\Masaüstü\Abbas's Code\DemoProject\ConsoleApp.DemoProje
 C:\Users\mamma\OneDrive\Masaüstü\Abbas's Code\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\obj\Debug\net5.0\ref\ConsoleApp.DemoProject.dll
 C:\Users\mamma\OneDrive\Masaüstü\Abbas's Code\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\obj\Debug\net5.0\ConsoleApp.DemoProject.pdb
 C:\Users\mamma\OneDrive\Masaüstü\Abbas's Code\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\obj\Debug\net5.0\ConsoleApp.DemoProject.genruntimeconfig.cache
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\bin\Debug\net5.0\ConsoleApp.DemoProject.exe
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\bin\Debug\net5.0\ConsoleApp.DemoProject.deps.json
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\bin\Debug\net5.0\ConsoleApp.DemoProject.runtimeconfig.json
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\bin\Debug\net5.0\ConsoleApp.DemoProject.runtimeconfig.dev.json
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\bin\Debug\net5.0\ConsoleApp.DemoProject.dll
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\bin\Debug\net5.0\ref\ConsoleApp.DemoProject.dll
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\bin\Debug\net5.0\ConsoleApp.DemoProject.pdb
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\obj\Debug\net5.0\ConsoleApp.DemoProject.csproj.AssemblyReference.cache
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\obj\Debug\net5.0\ConsoleApp.DemoProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\obj\Debug\net5.0\ConsoleApp.DemoProject.AssemblyInfoInputs.cache
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\obj\Debug\net5.0\ConsoleApp.DemoProject.AssemblyInfo.cs
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\obj\Debug\net5.0\ConsoleApp.DemoProject.csproj.CoreCompileInputs.cache
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\obj\Debug\net5.0\ConsoleApp.DemoProject.dll
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\obj\Debug\net5.0\ref\ConsoleApp.DemoProject.dll
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\obj\Debug\net5.0\ConsoleApp.DemoProject.pdb
+C:\Users\abbasfm\Desktop\DemoProject\DemoProject\ConsoleApp.DemoProject\ConsoleApp.DemoProject\obj\Debug\net5.0\ConsoleApp.DemoProject.genruntimeconfig.cache

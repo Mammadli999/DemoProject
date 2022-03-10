@@ -55,7 +55,12 @@ namespace ConsoleApp.DemoProject
                 case Menu.GroupRemove:
                     break;
                 case Menu.GroupSingle:
-                    break;
+                    Console.Clear();
+                    ShowAllGroups(groupMgr);
+                    int idvalue = ScannerManager.ReadInteger("Secdiyiniz Qrupun ID-ni Daxil Edin:");
+                    groupMgr.GroupSingle(idvalue);
+                    goto readMenu;
+
                 case Menu.GroupAll:
                     ShowAllGroups(groupMgr);
                     ShowAllStudents(studentMgr);
@@ -88,7 +93,12 @@ namespace ConsoleApp.DemoProject
                         int value = ScannerManager.ReadInteger("Deyismek Istediyiniz Telebenin ID-ni Daxil Edin: ");
                         studentMgr.StudentEditSurname(value);
                     }
-                    if (success1 && menuNumber1 == 4)
+                    else if (success1 && menuNumber1 == 3)
+                    {
+                        int value = ScannerManager.ReadInteger("Deyismek Istediyiniz Telebenin ID-ni Daxil Edin:");
+                        studentMgr.StudentEditDateTime(value);
+                    }
+                    else if (success1 && menuNumber1 == 4)
                     {
                         int value = ScannerManager.ReadInteger("Deyismek Istediyiniz Telebenin ID-ni Daxil Edin:");
                         studentMgr.StudentEditId(value);
@@ -97,7 +107,11 @@ namespace ConsoleApp.DemoProject
                 case Menu.StudentRemove:
                     break;
                 case Menu.StudentSingle:
-                    break;
+                    Console.Clear();
+                    ShowAllStudents(studentMgr);
+                    int idvalue1 = ScannerManager.ReadInteger("Secdiyiniz Telebenin ID-ni Daxil Edin:");
+                    studentMgr.StudentSingle(idvalue1);
+                    goto readMenu;
                 case Menu.StudentAll:
                     ShowAllStudents(studentMgr);
                     goto readMenu;
