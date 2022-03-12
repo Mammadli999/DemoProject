@@ -8,24 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mamma\\.nuget\\packages\\": {},
-    "D:\\Visual SDK\\NuGetPackages": {}
+    "C:\\Users\\abbasfm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mamma\\OneDrive\\Masaüstü\\Abbas's Code\\DemoProject\\ConsoleApp.DemoProject\\ConsoleApp.DemoProject\\ConsoleApp.DemoProject.csproj",
+      "projectUniqueName": "C:\\Users\\abbasfm\\Desktop\\DemoProject\\DemoProject\\ConsoleApp.DemoProject\\ConsoleApp.DemoProject\\ConsoleApp.DemoProject.csproj",
       "projectName": "ConsoleApp.DemoProject",
-      "projectPath": "C:\\Users\\mamma\\OneDrive\\Masaüstü\\Abbas's Code\\DemoProject\\ConsoleApp.DemoProject\\ConsoleApp.DemoProject\\ConsoleApp.DemoProject.csproj",
-      "packagesPath": "C:\\Users\\mamma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mamma\\OneDrive\\Masaüstü\\Abbas's Code\\DemoProject\\ConsoleApp.DemoProject\\ConsoleApp.DemoProject\\obj\\",
+      "projectPath": "C:\\Users\\abbasfm\\Desktop\\DemoProject\\DemoProject\\ConsoleApp.DemoProject\\ConsoleApp.DemoProject\\ConsoleApp.DemoProject.csproj",
+      "packagesPath": "C:\\Users\\abbasfm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\abbasfm\\Desktop\\DemoProject\\DemoProject\\ConsoleApp.DemoProject\\ConsoleApp.DemoProject\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\Visual SDK\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\mamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\abbasfm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -65,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

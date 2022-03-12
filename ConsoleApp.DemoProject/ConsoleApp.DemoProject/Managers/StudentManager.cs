@@ -10,6 +10,28 @@ namespace ConsoleApp.DemoProject.Managers
     {
         Student[] data = new Student[0];
 
+        public void StudentRemove(Student entity)
+        {
+            int index = Array.IndexOf(data, entity);
+
+            if (index == -1)
+            {
+                return;
+            }
+
+            for (int i = index; i < data.Length - 1; i++)
+            {
+                data[i] = data[i + 1];
+            }
+            if (data.Length > 0)
+            {
+                Array.Resize(ref data, data.Length - 1);
+            }
+
+        }
+
+
+
         public void StudentSingle(int value)
         {
             string stundetSingle = "";

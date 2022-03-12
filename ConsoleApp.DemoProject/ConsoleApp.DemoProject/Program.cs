@@ -2,6 +2,7 @@
 using ConsoleApp.DemoProject.Managers;
 using System;
 using System.Text;
+using System.Linq;
 
 namespace ConsoleApp.DemoProject
 {
@@ -53,13 +54,14 @@ namespace ConsoleApp.DemoProject
                     goto case Menu.GroupAll;
 
                 case Menu.GroupRemove:
-                    //Console.Clear();
-                    //ShowAllGroups(groupMgr);
-                    //int idvalue2 = ScannerManager.ReadInteger("Secdiyiniz Qrupun ID-ni Daxil Edin:");
-                    //groupMgr.GroupRemove(idvalue2);
+                    Console.Clear();
+                    ShowAllGroups(groupMgr);
+                    int id = ScannerManager.ReadInteger("Silmek Istediyiniz Qrupun ID-ni Daxil Edin: ");
 
+                    Group g1 = groupMgr.GetAll().FirstOrDefault(item => item.Id == id);
+                    groupMgr.GroupRemove(g1);
+                    goto case Menu.GroupAll;
 
-                    goto readMenu;
                 case Menu.GroupSingle:
                     Console.Clear();
                     ShowAllGroups(groupMgr);
@@ -110,8 +112,17 @@ namespace ConsoleApp.DemoProject
                         studentMgr.StudentEditId(value);
                     }
                     goto case Menu.StudentAll;
+
                 case Menu.StudentRemove:
-                    break;
+                    Console.Clear();
+                    ShowAllStudents(studentMgr);
+                    int id1 = ScannerManager.ReadInteger("Silmek Istediyiniz Qrupun ID-ni Daxil Edin: ");
+
+                    Student g2 = studentMgr.GetAll().FirstOrDefault(item => item.Id == id1);
+
+                    studentMgr.StudentRemove(g2);
+                    goto case Menu.StudentAll;
+
                 case Menu.StudentSingle:
                     Console.Clear();
                     ShowAllStudents(studentMgr);

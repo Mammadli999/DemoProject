@@ -10,8 +10,23 @@ namespace ConsoleApp.DemoProject.Managers
     {
         Group[] data = new Group[0];
 
-        public void GroupRemove(int value)
+        public void GroupRemove(Group entity)
         {
+            int index = Array.IndexOf(data, entity);
+
+            if (index == -1)
+            {
+                return;
+            }
+
+            for (int i = index ; i < data.Length - 1; i++)
+            {
+                data[i] = data[i + 1];
+            }
+            if (data.Length > 0)
+            {
+                Array.Resize(ref data, data.Length - 1);
+            }
             
         }
 
