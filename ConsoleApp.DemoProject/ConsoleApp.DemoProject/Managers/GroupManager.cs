@@ -10,6 +10,11 @@ namespace ConsoleApp.DemoProject.Managers
     {
         Group[] data = new Group[0];
 
+        public void GroupRemove(int value)
+        {
+            
+        }
+
         public void GroupSingle(int value)
         {
             string singleGroup = "";

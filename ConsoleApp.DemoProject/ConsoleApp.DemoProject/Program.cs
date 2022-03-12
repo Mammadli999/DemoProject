@@ -53,7 +53,13 @@ namespace ConsoleApp.DemoProject
                     goto case Menu.GroupAll;
 
                 case Menu.GroupRemove:
-                    break;
+                    //Console.Clear();
+                    //ShowAllGroups(groupMgr);
+                    //int idvalue2 = ScannerManager.ReadInteger("Secdiyiniz Qrupun ID-ni Daxil Edin:");
+                    //groupMgr.GroupRemove(idvalue2);
+
+
+                    goto readMenu;
                 case Menu.GroupSingle:
                     Console.Clear();
                     ShowAllGroups(groupMgr);
